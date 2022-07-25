@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Rose", "cursive";
+}
+.container::before {
+  content: "";
+  background: linear-gradient(
+      to right,
+      rgba(25, 31, 49, 0.85),
+      rgba(25, 31, 49, 0.85)
+    ),url("./assets/background.jpg");
+  
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* ---------- NAVBAR ------------ */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10%;
+}
+/* ------------------------------ */
+.navbar ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #f5b515;
+}
+.navbar ul li a {
+  text-decoration: none;
+}
+.logo {
+  width: 30vh;
+  height: 10%;
+  padding-left: 20px;
+}
+.button-small {
+  border: none;
+  background: #ff505f;
+  padding: 12px 30px;
+  color: white;
+
+}
+/* ------------------------------ */
+/* ---------- HERO ------------ */
+.hero {
+  color: #f3b313;
+  font-size: 1px;
+  top: 30px;
+max-width: 100%;
+  position: relative;
+  text-align: center;
+
+}
+
+
+
+.button-large {
+  border: none;
+  background: #ff505f;
+  padding: 12px 40px;
+  color: white;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-weight: 10rem;
+}
+
+/* ------------------------------ */
+.bottom {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-bottom: 300px;
+  padding-right: 30px;
+}
+.hero h1{
+  font-size: 120px;
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+}
